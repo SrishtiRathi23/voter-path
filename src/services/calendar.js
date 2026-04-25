@@ -60,6 +60,11 @@ async function getCalendarToken() {
             sessionStorage.setItem('vp_calendar_token', accessToken);
             sessionStorage.setItem('vp_calendar_token_expiry', Date.now() + (parseInt(expiresIn, 10) * 1000).toString());
             
+            try {
+              window.history.replaceState({}, document.title, window.location.pathname);
+              if (popup) popup.history.replaceState({}, document.title, popup.location.pathname);
+            } catch (e) {}
+            
             popup.close();
             clearInterval(checkPopup);
             resolve(accessToken);

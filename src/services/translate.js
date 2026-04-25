@@ -2,6 +2,12 @@
 
 const translationCache = new Map();
 
+const glossary = {
+  "EPIC": "EPIC",
+  "EVM": "EVM",
+  "NOTA": "NOTA"
+};
+
 /**
  * Translates text using Google Cloud Translation REST API.
  * @param {string} text - The text to translate.
@@ -10,6 +16,8 @@ const translationCache = new Map();
  */
 export async function translateText(text, targetLang) {
   if (!text || typeof text !== 'string') return text;
+  
+  if (glossary[text]) return glossary[text];
   
   const target = targetLang.toLowerCase();
   
