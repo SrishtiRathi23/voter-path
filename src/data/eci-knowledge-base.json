@@ -1,0 +1,426 @@
+[
+  {
+    "id": "reg_001",
+    "category": "registration",
+    "question": "How do I check if I am registered to vote?",
+    "answer": "You can check your name in the voter list on the official ECI website at voters.eci.gov.in. Use your EPIC number, or search by your name, age, and address. The National Voters Service Portal (NVSP) also lets you check via SMS by sending EPIC<space><EPIC-NO> to 1950.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_002",
+    "category": "registration",
+    "question": "How do I register to vote for the first time?",
+    "answer": "First-time voters aged 18 and above can register online at voters.eci.gov.in by filling Form 6. You will need a recent passport-size photo, proof of age (birth certificate or school leaving certificate), and proof of residence (Aadhaar, ration card, or utility bill). Offline registration is also available at your local BLO (Booth Level Officer) office.",
+    "source": "https://voters.eci.gov.in/register-as-voter",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_003",
+    "category": "registration",
+    "question": "What is the age requirement to vote in India?",
+    "answer": "You must be at least 18 years of age on or before the 1st January of the qualifying year of the electoral roll revision to be eligible to register as a voter. You must also be a citizen of India and ordinarily resident at your place of registration.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_004",
+    "category": "registration",
+    "question": "Can I vote if I have recently moved to a new address?",
+    "answer": "Yes, but you must update your voter registration. Submit Form 8A online at voters.eci.gov.in to transfer your registration to your new address. Until your transfer is complete, you can only vote at your old polling booth. NRI voters can also register using Form 6A.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_005",
+    "category": "registration",
+    "question": "How do I correct a mistake in my voter registration?",
+    "answer": "To correct errors in your voter registration details (name spelling, date of birth, address, photo), submit Form 8 online at voters.eci.gov.in or at your local BLO office. Corrections are usually processed within a few weeks.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_006",
+    "category": "registration",
+    "question": "Can I be registered at two places at the same time?",
+    "answer": "No. It is illegal to be registered as a voter in more than one constituency or in more than one place in the same constituency. This is an offence under Section 17 and 18 of the Representation of the People Act, 1950 and can result in legal action.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_007",
+    "category": "registration",
+    "question": "How do I register to vote as an NRI?",
+    "answer": "Non-Resident Indians who are Indian citizens and whose names are not registered in any constituency can register by submitting Form 6A online at voters.eci.gov.in. NRI voters can only vote in person at their assigned polling booth in India — postal voting is not available for NRIs.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_001",
+    "category": "voter_id",
+    "question": "What is an EPIC card?",
+    "answer": "EPIC stands for Elector Photo Identity Card. It is the official voter ID card issued by the Election Commission of India. It contains your name, photo, EPIC number, serial number, and constituency details. While it is the primary ID for voting, other approved documents can also be used.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_002",
+    "category": "voter_id",
+    "question": "What ID documents can I use to vote if I don't have my Voter ID card?",
+    "answer": "You can use any ONE of these 12 approved photo identity documents: EPIC (Voter ID), Aadhaar Card, Passport, Driving Licence, PAN Card, MNREGA Job Card, Health Insurance Smart Card issued under the scheme of Ministry of Labour, Passbook with photo issued by Post Office and Banks, Smart Card issued by RGI under NPR, Pension document with photograph, Official identity card issued by Central or State Government, Member of Parliament, Member of Legislative Assembly, or Member of Legislative Council identity card.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_003",
+    "category": "voter_id",
+    "question": "How do I apply for a new or duplicate EPIC card?",
+    "answer": "Apply online at voters.eci.gov.in or through the Voter Helpline App. For a new card, submit Form 6. For a duplicate card (lost or damaged), submit Form 002 or visit your local Electoral Registration Office with an FIR copy if the card was stolen.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_004",
+    "category": "voter_id",
+    "question": "Is Aadhaar card enough to vote?",
+    "answer": "Yes, Aadhaar is one of the 12 approved photo identity documents for voting. However, Aadhaar alone is not a voter registration — you must first be registered in the electoral roll. You can use your Aadhaar card as a proof of identity at the polling booth.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_005",
+    "category": "voter_id",
+    "question": "What happens if my name is in the voter list but I forgot to bring my ID?",
+    "answer": "You should always carry a valid photo ID document to the polling booth. Without identification, you may be denied your vote. If you arrive without ID, return home to collect it — polling booths remain open for voters who arrived on time.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_001",
+    "category": "booth",
+    "question": "How do I find my polling booth?",
+    "answer": "Find your polling booth at voters.eci.gov.in by entering your EPIC number or name and address. The Voter Helpline App also shows your booth on a map. You can also call the National Voter Helpline at 1950 to get your booth details.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_002",
+    "category": "booth",
+    "question": "What are the polling booth timings?",
+    "answer": "Generally, polling booths are open from 7:00 AM to 6:00 PM on election day. However, timings can vary by state and constituency. Voters who are in the queue before the official closing time are allowed to vote even after 6:00 PM. Check your local election authority for exact timings.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_003",
+    "category": "booth",
+    "question": "Can I vote at a different booth than the one assigned to me?",
+    "answer": "No. You must vote at the specific polling booth assigned to you based on your electoral roll entry. You cannot vote at any other booth. Your booth details are printed on the voter slip issued by your local BLO before election day.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_004",
+    "category": "booth",
+    "question": "What facilities are available at polling booths?",
+    "answer": "All polling booths must provide: ramp access for differently-abled voters, drinking water, toilets (separate for men and women), basic waiting area, and clear signage. The ECI mandates that all booths are accessible to persons with disabilities under the Model Polling Station guidelines.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_005",
+    "category": "booth",
+    "question": "What is the voter slip and how do I get it?",
+    "answer": "A voter slip is a printed document issued by your Booth Level Officer (BLO) before election day. It contains your name, serial number in the voter list, and polling booth address. The slip helps booth officials locate your entry quickly but is NOT a substitute for a valid photo ID.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_006",
+    "category": "booth",
+    "question": "Can I vote if I have moved to a different state?",
+    "answer": "If you have moved to another state, you need to first delete your name from your old constituency (Form 7) and register in your new constituency (Form 6). Until the transfer is complete, you can only vote at your old registered booth.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_007",
+    "category": "booth",
+    "question": "Are senior citizens and disabled persons given priority at booths?",
+    "answer": "Yes. Senior citizens (80+), persons with disabilities (PwD), and pregnant women are given priority queuing at polling booths. The ECI has also launched home voting (postal ballot) facilities for voters aged 85 and above and those with disabilities (40%+ disability) in many states.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_001",
+    "category": "evm",
+    "question": "How does the EVM (Electronic Voting Machine) work?",
+    "answer": "An EVM consists of two units: the Control Unit (with the Presiding Officer) and the Ballot Unit (with the voter). When the officer enables voting, a light turns green on the ballot unit. You press the button next to your candidate's name and symbol. A beep confirms your vote has been recorded. The machine displays 'VOTED' and locks until the next voter is enabled.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_002",
+    "category": "evm",
+    "question": "Can the EVM be hacked or tampered with?",
+    "answer": "No. Indian EVMs are standalone machines with no WiFi, Bluetooth, internet, or radio frequency connection — making remote hacking impossible. They use one-time programmable chips that cannot be reprogrammed. The ECI invites all political parties to inspect EVMs through First Level Checks before every election. EVMs are also randomized across constituencies to prevent pre-targeting.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_003",
+    "category": "evm",
+    "question": "What is a VVPAT machine?",
+    "answer": "VVPAT stands for Voter Verified Paper Audit Trail. It is a printer attached to the EVM that generates a paper slip showing the candidate name, symbol, and serial number for whom you have voted. The slip is visible for 7 seconds through a transparent window, then falls into a sealed box. VVPAT provides an independent verification of your vote.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_004",
+    "category": "evm",
+    "question": "Is my vote on the EVM linked to my identity?",
+    "answer": "No. EVM votes are completely anonymous. The machine records only a running count — it does not store which voter pressed which button or in what order. Not even the Presiding Officer, the Election Commission, or a court order can determine how a specific person voted. Your vote is constitutionally protected as secret.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_005",
+    "category": "evm",
+    "question": "What if the EVM button doesn't work or malfunctions?",
+    "answer": "If an EVM malfunctions during voting, inform the Presiding Officer immediately. The faulty unit will be replaced with a standby machine. Votes already cast on the faulty machine are NOT lost — the Control Unit is retained and its stored votes are counted normally.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_006",
+    "category": "evm",
+    "question": "How many votes can an EVM hold?",
+    "answer": "A single EVM Ballot Unit can accommodate up to 16 candidates. If there are more than 16 candidates, additional Ballot Units are linked together (up to 4 units = 64 candidates maximum). An EVM can store a maximum of 2,000 votes in total.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "nota_001",
+    "category": "nota",
+    "question": "What is NOTA?",
+    "answer": "NOTA stands for 'None of the Above'. It is an option at the bottom of every EVM that allows voters to officially reject all candidates without abstaining from voting. NOTA was introduced after the Supreme Court order in PUCL vs. Union of India (2013). Pressing NOTA registers your vote as a protest vote — it is counted in total votes but does not favour any candidate.",
+    "source": "https://eci.gov.in/nota",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "nota_002",
+    "category": "nota",
+    "question": "Does NOTA affect the election result?",
+    "answer": "No. NOTA votes are counted and displayed in the results, but they do not get transferred to any candidate. The candidate with the highest number of valid votes wins, regardless of how many NOTA votes were cast. Even if NOTA gets the most votes, the candidate with the next highest votes wins the seat.",
+    "source": "https://eci.gov.in/nota",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "nota_003",
+    "category": "nota",
+    "question": "How do I vote for NOTA?",
+    "answer": "NOTA appears as the last option on the Ballot Unit of the EVM, after all candidate names. It has a unique symbol (a cross mark over a ballot paper). Press the NOTA button to register your vote. The VVPAT will show the NOTA symbol on the paper slip for confirmation.",
+    "source": "https://eci.gov.in/nota",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "nota_004",
+    "category": "nota",
+    "question": "Is NOTA the same as not voting?",
+    "answer": "No. NOTA is an active, official vote — it counts toward the total turnout percentage and is reported publicly in election results. Not voting means you abstain entirely and are not counted. Choosing NOTA is a legal and constitutionally recognized way to exercise your franchise while expressing dissatisfaction.",
+    "source": "https://eci.gov.in/nota",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_001",
+    "category": "complaints",
+    "question": "How do I report election rule violations?",
+    "answer": "You can report violations through the cVIGIL app (download from Play Store or App Store) by uploading a photo or video with your location. Reports are reviewed by Flying Squad teams within 100 minutes. You can also call the National Voter Helpline at 1950 or report at your local District Election Officer's office.",
+    "source": "https://cvigil.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_002",
+    "category": "complaints",
+    "question": "What should I do if someone offers me money or gifts to vote?",
+    "answer": "Immediately report it on the cVIGIL app or call 1950. Vote buying (bribery) is a criminal offence under Section 171B of the Indian Penal Code, punishable with up to 1 year imprisonment or fine or both. You can report anonymously — your identity will not be revealed.",
+    "source": "https://cvigil.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_003",
+    "category": "complaints",
+    "question": "What do I do if my name is missing from the voter list even though I registered?",
+    "answer": "First, verify your registration status on voters.eci.gov.in. If your name is genuinely missing, you can cast a Tendered Vote by producing your proof of registration at the booth — this is recorded separately and is not counted unless a dispute arises. Report the issue to the Presiding Officer and file a complaint at the District Election Officer's office.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_004",
+    "category": "complaints",
+    "question": "How do I complain about intimidation or threats at a polling booth?",
+    "answer": "Immediately inform the Presiding Officer at the booth. You can also call 1950 (National Voter Helpline), dial 100 (Police), or report on the cVIGIL app. The ECI has deployed Micro Observers, Sector Officers, and Webcasting at sensitive booths for monitoring.",
+    "source": "https://cvigil.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_005",
+    "category": "complaints",
+    "question": "Can I take a photo inside a polling booth?",
+    "answer": "No. Photography or videography inside the polling booth — especially of the ballot or EVM — is strictly prohibited under election rules. Violators can be removed from the booth and may face legal action. Mobile phones must not be used inside the voting compartment.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_008",
+    "category": "registration",
+    "question": "How long does voter registration take?",
+    "answer": "Online registrations through voters.eci.gov.in are typically processed within 30 days of submission. Your BLO will verify your details in person before the registration is confirmed. You will receive an SMS notification once your EPIC card is ready for collection.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_009",
+    "category": "registration",
+    "question": "Can a prisoner vote in India?",
+    "answer": "Persons in lawful custody (under-trial prisoners) can apply for postal ballots in some states, but convicted prisoners serving sentences are generally disqualified from voting under the Representation of the People Act, 1951. Rules may vary by state — check with the State Election Commission.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_010",
+    "category": "registration",
+    "question": "What documents do I need for voter registration?",
+    "answer": "For voter registration (Form 6) you need: (1) Age proof — birth certificate, school leaving certificate, PAN card, passport, or Aadhaar with date of birth. (2) Residence proof — Aadhaar, ration card, utility bill, bank passbook, or rental agreement. (3) A recent passport-size photograph.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_008",
+    "category": "booth",
+    "question": "How many voters are there in each polling booth?",
+    "answer": "The ECI limits each polling booth to a maximum of 1,500 voters. This is to prevent overcrowding and ensure efficient voting. In sensitive or Naxal-affected areas, this limit may be lower.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_009",
+    "category": "booth",
+    "question": "What is the Model Code of Conduct?",
+    "answer": "The Model Code of Conduct (MCC) is a set of guidelines issued by the ECI that comes into effect on election announcement. It prohibits the ruling government from announcing new schemes, making policy promises, or using government resources for campaigning. It applies to all political parties and candidates until the election is complete.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_007",
+    "category": "evm",
+    "question": "What happens if I accidentally press the wrong button on the EVM?",
+    "answer": "Once you press a button on the EVM, the vote is immediately recorded and the machine locks for that turn. There is no way to cancel or change your vote once it is cast. The EVM beeps once to confirm. Always read the ballot carefully before pressing.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_006",
+    "category": "voter_id",
+    "question": "What is the Voter Helpline number in India?",
+    "answer": "The National Voter Helpline number is 1950. It is toll-free and available during election periods. You can also use the Voter Helpline App (available on Android and iOS) or visit voters.eci.gov.in for all voter services.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_007",
+    "category": "voter_id",
+    "question": "Can I vote without my name being in the voter list?",
+    "answer": "No. You must have your name on the electoral roll of the constituency to vote. If your name is not in the list, you cannot cast a regular vote. You may be allowed to cast a 'Tendered Vote' as a provisional measure if you have proof of registration, but this is counted only under special circumstances.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "nota_005",
+    "category": "nota",
+    "question": "Is there a symbol for NOTA on the EVM?",
+    "answer": "Yes. NOTA has an official symbol — a ballot paper with a black cross mark over it. This symbol appears next to the NOTA button at the bottom of the EVM Ballot Unit. The VVPAT paper slip will also display the NOTA symbol if you select it.",
+    "source": "https://eci.gov.in/nota",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_006",
+    "category": "complaints",
+    "question": "What is cVIGIL?",
+    "answer": "cVIGIL is the Election Commission of India's official mobile app for citizens to report election violations in real-time. You can report violations like illegal cash distribution, liquor distribution, hate speech, or misuse of government vehicles. The app requires location access and a photo or video, and all reports are reviewed within 100 minutes. Available on Android and iOS.",
+    "source": "https://cvigil.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_011",
+    "category": "registration",
+    "question": "Can I vote by postal ballot?",
+    "answer": "Postal ballot voting is available for specific categories: service voters (defence, paramilitary, government employees posted away), voters with disabilities (40%+), senior citizens (85+), COVID-19-affected voters (in special election periods), and election duty personnel. Apply through your district election office.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_010",
+    "category": "booth",
+    "question": "What is a Presiding Officer?",
+    "answer": "A Presiding Officer is a government official appointed by the District Election Officer to be in charge of a polling booth. They control the EVM, maintain order, issue voter slips, verify IDs, and record all voting proceedings in the Presiding Officer's diary. They cannot be questioned except by the ECI.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_012",
+    "category": "registration",
+    "question": "Is there a deadline to register to vote before an election?",
+    "answer": "Yes. The voter registration deadline is set by the ECI before each election — typically a few weeks before the election is announced. After the election schedule is announced, registration for that election closes. Always check voters.eci.gov.in for the current registration deadlines for your state.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_008",
+    "category": "evm",
+    "question": "Who manufactures EVMs in India?",
+    "answer": "EVMs used in Indian elections are manufactured exclusively by two government undertakings: Bharat Electronics Limited (BEL) and Electronics Corporation of India Limited (ECIL). The machines are manufactured under strict secrecy with only select technical personnel involved, and each unit is tested through multiple stages before deployment.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "voter_id_008",
+    "category": "voter_id",
+    "question": "What should I do if my EPIC card has a wrong photo?",
+    "answer": "Submit Form 8 online at voters.eci.gov.in to request a correction. Upload a recent passport-size photograph and your existing EPIC card details. Your BLO will verify the change, and a corrected card will be issued within a few weeks.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "complaints_007",
+    "category": "complaints",
+    "question": "What is the penalty for impersonating another voter?",
+    "answer": "Voter impersonation is a serious criminal offence under Section 171D of the Indian Penal Code. It is punishable with imprisonment of up to 1 year, a fine, or both. Booth capture (forcibly taking over a polling booth) is punishable with up to 3 years imprisonment under Section 135A of the Representation of the People Act.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "evm_009",
+    "category": "evm",
+    "question": "What is a mock poll?",
+    "answer": "A mock poll is a test voting session conducted by the Presiding Officer at the polling booth before actual voting begins (before 7:00 AM on election day). Representatives of all candidates can witness the mock poll, which casts at least 50 votes to verify the EVM is functioning correctly. After the mock poll, the machine is cleared and reset to zero.",
+    "source": "https://eci.gov.in/evm",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "reg_013",
+    "category": "registration",
+    "question": "How do I delete my voter registration if I have moved permanently abroad?",
+    "answer": "If you have moved permanently to a foreign country and taken citizenship there, you are no longer eligible to vote in India. You can request deletion of your voter ID by submitting Form 7 at your local Electoral Registration Officer or online at voters.eci.gov.in.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  },
+  {
+    "id": "booth_011",
+    "category": "booth",
+    "question": "Are election agents allowed inside polling booths?",
+    "answer": "Yes. Each candidate is allowed to appoint a Polling Agent who can be present inside the polling booth to observe the voting process. Polling Agents can object to voter identification, record irregularities, and sign the Presiding Officer's diary. They cannot interfere with the voting process.",
+    "source": "https://voters.eci.gov.in",
+    "last_verified": "2026-04-01"
+  }
+]

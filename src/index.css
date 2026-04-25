@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-base text-[#1A1A1A] bg-[#FAFAFA];
+  }
+  h1 {
+    @apply text-h1 text-navy mb-4;
+  }
+  h2 {
+    @apply text-h2 text-navy mb-3;
+  }
+  h3 {
+    @apply text-h3 text-navy mb-2;
+  }
+  p {
+    @apply mb-4 last:mb-0;
+  }
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Focus ring visible for a11y */
+  :focus-visible {
+    outline: 2px solid #FF6B00;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Page Container Constraint */
+  .page-container {
+    @apply mx-auto w-full max-w-[1200px] px-4 md:px-6 lg:px-8;
+  }
+  
+  /* Vertical spacing between sections */
+  .section-spacing {
+    @apply py-12 md:py-16 lg:py-[72px];
+  }
+
+  /* Cards Design Rules */
+  .card {
+    @apply bg-white rounded-card shadow-sm p-5 md:p-6;
+  }
+
+  /* Buttons Design Rules */
+  .btn {
+    @apply font-semibold flex items-center justify-center transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none aria-disabled:opacity-50 aria-disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-saffron text-white rounded-full px-6 py-3 hover:bg-saffron-dark focus:ring-saffron;
+  }
+  .btn-secondary {
+    @apply btn border-2 border-navy text-navy rounded-full px-6 py-3 hover:bg-navy-light focus:ring-navy;
+  }
+
+  /* Input Design Rules */
+  .input-field {
+    @apply w-full rounded-full border border-gray-300 px-5 py-3 min-h-[44px] focus:ring-2 focus:ring-saffron focus:border-transparent focus:outline-none bg-white text-base;
+  }
+
+  /* Layout Z-index classes */
+  .z-navbar {
+    z-index: 50;
+  }
+  .z-mobile-nav {
+    z-index: 60;
+  }
+}
