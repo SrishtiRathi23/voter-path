@@ -57,6 +57,13 @@ async function getCalendarToken() {
             const accessToken = params.get('access_token');
             const expiresIn = params.get('expires_in') || 3600;
             
+            // Scrub hash from URL to prevent token leakage
+            try {
+              popup.history.replaceState(null, null, ' ');
+            } catch (e) {
+              // Ignore if blocked by browser right before closing
+            }
+
             sessionStorage.setItem('vp_calendar_token', accessToken);
             sessionStorage.setItem('vp_calendar_token_expiry', Date.now() + (parseInt(expiresIn, 10) * 1000).toString());
             

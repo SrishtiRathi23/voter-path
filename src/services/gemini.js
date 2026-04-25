@@ -79,12 +79,21 @@ function findStaticFallback(question) {
   };
 }
 
+// ─── Types & Interfaces ───────────────────────────────────────────────────────
+/**
+ * @typedef {Object} AIResponse
+ * @property {string} answer - The plain-language answer to the user's question.
+ * @property {string} source - The ECI URL verifying this fact.
+ * @property {number} confidence - Confidence score 0.0 to 1.0.
+ * @property {string} next_step - A follow-up suggestion.
+ */
+
 // ─── Main Ask Function ────────────────────────────────────────────────────────
 /**
  * @param {string} question - Raw user question
  * @param {string} language - 'EN' | 'HI' | 'TA'
- * @param {Array}  history  - Last N message objects {role, content}
- * @returns {Promise<{answer, source, confidence, next_step, category, isStatic?, error?}>}
+ * @param {Array<{role: string, content: string}>} history - Last N messages
+ * @returns {Promise<GeminiResponse>}
  */
 export async function askGemini(question, language = 'EN', history = []) {
   // 1. Rate limit check

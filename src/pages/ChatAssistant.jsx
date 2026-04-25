@@ -44,6 +44,7 @@ const AssistantBubble = ({ msg, onSuggestionClick }) => {
     <div className="flex justify-start">
       <div className="max-w-[82%] flex flex-col gap-2">
         <div
+          aria-live="polite"
           className={`bg-white px-4 py-3 rounded-[16px] rounded-tl-[4px] text-small text-[#1A1A1A] shadow-sm ${
             msg.rawFallback ? 'border border-yellow-300' : 'border-l-4 border-navy'
           }`}
@@ -208,6 +209,7 @@ const ChatAssistant = () => {
                 className="flex-1 overflow-y-auto p-4 flex flex-col gap-4"
                 role="log"
                 aria-live="polite"
+                aria-atomic="false"
                 aria-label="Chat messages"
                 aria-relevant="additions"
               >

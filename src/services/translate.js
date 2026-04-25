@@ -2,11 +2,8 @@
 
 const translationCache = new Map();
 
-const glossary = {
-  "EPIC": "EPIC",
-  "EVM": "EVM",
-  "NOTA": "NOTA"
-};
+// Glossary to prevent literal translation of election jargon
+const GLOSSARY = new Set(['EPIC', 'EVM', 'NOTA', 'BLO', 'VVPAT', 'ECI', 'VoterPath']);
 
 /**
  * Translates text using Google Cloud Translation REST API.
@@ -17,7 +14,7 @@ const glossary = {
 export async function translateText(text, targetLang) {
   if (!text || typeof text !== 'string') return text;
   
-  if (glossary[text]) return glossary[text];
+  if (GLOSSARY.has(text)) return text;
   
   const target = targetLang.toLowerCase();
   
@@ -26,10 +23,18 @@ export async function translateText(text, targetLang) {
   if (/^https?:\/\//.test(text.trim())) return text;
   if (!isNaN(parseFloat(text)) && isFinite(text)) return text;
   
-  const cacheKey = `${target}_${text}`;
+  const cacheKey = `${target}:${text}`;
   if (translationCache.has(cacheKey)) {
     return translationCache.get(cacheKey);
   }
+  
+  try {
+    const local = localStorage.getItem(cacheKey);
+    if (local) {
+      translationCache.set(cacheKey, local);
+      return local;
+    }
+  } catch(e) {}
 
   const apiKey = import.meta.env.VITE_TRANSLATE_API_KEY;
   if (!apiKey || apiKey === 'REPLACE_WITH_YOUR_KEY') {
@@ -37,14 +42,22 @@ export async function translateText(text, targetLang) {
     return text;
   }
 
+  // Pre-process text to protect glossary terms
+  let processedText = text;
+  GLOSSARY.forEach(term => {
+    const regex = new RegExp(`\\b${term}\\b`, 'g');
+    processedText = processedText.replace(regex, `<span translate="no">${term}</span>`);
+  });
+
   try {
     const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
     const response = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        q: text,
+        q: processedText,
         target: target,
+        format: 'html' // Enables HTML parsing so span is respected
       }),
     });
 
@@ -55,8 +68,16 @@ export async function translateText(text, targetLang) {
     const data = await response.json();
     
     if (data?.data?.translations?.[0]?.translatedText) {
-      const translated = data.data.translations[0].translatedText;
+      let translated = data.data.translations[0].translatedText;
+      // Post-process: remove protective span tags and fix quotes
+      translated = translated.replace(/<span translate="no">/g, '').replace(/<\/span>/g, '');
+      translated = translated.replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+      
       translationCache.set(cacheKey, translated);
+      try {
+        localStorage.setItem(cacheKey, translated);
+      } catch(e) {}
+      
       return translated;
     }
     
