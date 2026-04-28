@@ -10,6 +10,7 @@ import DeadlineCalendar from './pages/DeadlineCalendar';
 import MythBuster from './pages/MythBuster';
 import Transparency from './pages/Transparency';
 import BiasShield from './pages/BiasShield';
+import VoteSimulation from './pages/VoteSimulation';
 import NotFound from './pages/NotFound';
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
               <Route path="/myths" element={<MythBuster />} />
               <Route path="/transparency" element={<Transparency />} />
               <Route path="/bias-shield" element={<BiasShield />} />
+              <Route path="/simulation" element={<VoteSimulation />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ChatProvider>

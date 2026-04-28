@@ -11,6 +11,7 @@ const navLinks = [
   { to: '/deadlines', label: 'Deadlines' },
   { to: '/myths', label: 'Myth Buster' },
   { to: '/bias-shield', label: 'Bias Shield' },
+  { to: '/simulation', label: 'Live Simulation' },
   { to: '/transparency', label: 'Transparency' },
 ];
 

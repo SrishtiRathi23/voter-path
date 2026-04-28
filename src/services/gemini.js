@@ -161,17 +161,17 @@ export async function askGemini(question, language = 'EN', history = []) {
         throw new Error('Incomplete JSON response from Gemini.');
       }
 
-      // MULTI-STAGE PROMPTING: Simplifier & Accessibility Agent
-      // If the response is not a guardrail, pass it to a second agent to simplify the language to a 5th-grade reading level.
+      // MULTI-STAGE PROMPTING: Bias-Check & Simplifier Agent
+      // If the response is not a guardrail, pass it to a second agent to double-check for neutrality and simplify the language.
       let finalAnswer = parsed.answer;
       if (parsed.category !== 'guardrail' && parsed.confidence > 0) {
         try {
           const simplifierModel = genAI.getGenerativeModel({ model: 'gemini-1.5-flash', generationConfig: { temperature: 0.1 } });
-          const simplifierPrompt = `You are a plain-language accessibility expert. Rewrite the following electoral fact so that it is easily understood by a 5th-grader. Keep it under 3 sentences and preserve all facts perfectly. Text to simplify: "${parsed.answer}"`;
+          const simplifierPrompt = `You are an expert Bias-Check Agent and Accessibility Simplifier. First, review the following text to ensure it contains absolutely ZERO political bias or opinions. Then, rewrite the factual content so it is easily understood by a 5th-grader. Keep it under 3 sentences. Text to review: "${parsed.answer}"`;
           const simplifierResult = await simplifierModel.generateContent(simplifierPrompt);
           finalAnswer = simplifierResult.response.text().trim();
         } catch (e) {
-          console.warn("Simplifier agent failed, using original response.");
+          console.warn("Bias-Check agent failed, using original response.");
         }
       }
 

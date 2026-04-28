@@ -40,6 +40,25 @@ src/
  └── tests/            # Comprehensive unit/integration test suites
 ```
 
+### System Architecture Diagram
+```mermaid
+graph TD
+    User([User]) --> UI[React UI / Tailwind]
+    UI --> Context[Global Context Providers]
+    Context --> Services[API Services]
+    
+    subgraph "Multi-Agent AI Pipeline"
+    Services --> GeminiA[Agent 1: Expert Retriever]
+    GeminiA --> JSON[Static ECI Knowledge Base]
+    GeminiA --> GeminiB[Agent 2: Bias-Check & Simplifier]
+    GeminiB --> Translate[Google Cloud Translate]
+    end
+    
+    Translate --> UI
+    Services --> Firebase[(Firestore Analytics)]
+    Services --> Calendar[Google Calendar API]
+```
+
 ---
 
 ## How this project meets evaluation criteria
@@ -70,7 +89,10 @@ src/
 
 **Google Services & AI Strategy:**
 - **Antigravity** → End-to-end "vibe coding" generation
-- **Gemini** → AI assistant (with documented Role, Context, Constraints)
+- **Gemini (Multi-Agent Pipeline)** → 
+  - *Agent 1*: Retrieves strictly factual answers from the JSON knowledge base using **Few-Shot** prompting and **Chain-of-Thought (CoT)**.
+  - *Agent 2*: A secondary "Bias-Check Agent" that sanitizes the output and simplifies it to a 5th-grade reading level.
+- **System Personas** → Strict instruction sets enforcing a neutral, non-political "VoterPath Guide" persona.
 - **Translate** → Multilingual support
 - **Calendar & Firebase** → Reminders & Analytics
 
@@ -166,6 +188,26 @@ We treat election data with the highest sensitivity. Our testing suite enforces:
    Ensure 80%+ coverage across all domains:
    ```bash
    npm run test
+   ```
+
+### 🚀 Deployment (Google Cloud Run)
+VoterPath is optimized for stateless containerized deployment.
+
+1. **Build the Docker image:**
+   ```bash
+   docker build -t gcr.io/YOUR_PROJECT_ID/voterpath-india .
+   ```
+2. **Push to Google Container Registry:**
+   ```bash
+   docker push gcr.io/YOUR_PROJECT_ID/voterpath-india
+   ```
+3. **Deploy to Cloud Run:**
+   ```bash
+   gcloud run deploy voterpath-india \
+     --image gcr.io/YOUR_PROJECT_ID/voterpath-india \
+     --platform managed \
+     --region us-central1 \
+     --allow-unauthenticated
    ```
 
 ## 🎨 Design System
