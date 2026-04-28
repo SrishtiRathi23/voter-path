@@ -17,7 +17,7 @@ const MainLayout = ({ children, showFooter = false }) => {
       <Navbar />
 
       {/* Main content — bottom padding on mobile for bottom nav */}
-      <main id="main-content" className="flex-1 pb-20 lg:pb-0 animate-fade-in">
+      <main id="main-content" className="flex-1 flex flex-col min-h-0 pb-20 lg:pb-0 animate-fade-in">
         {children}
       </main>
 
