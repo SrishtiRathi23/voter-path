@@ -9,7 +9,7 @@ const Transparency = () => {
       <div className="page-container section-spacing animate-fade-in">
         <div className="text-center mb-12">
           <span className="inline-block px-4 py-1.5 bg-navy text-white text-meta font-semibold rounded-full mb-5">
-            <TranslateText>Ethical AI Commitment</TranslateText>
+            <TranslateText>Solution Challenge 2026: Unbiased AI Decision Track</TranslateText>
           </span>
           <h1 className="text-[32px] md:text-[40px] text-navy font-bold mb-4">
             <TranslateText>AI Transparency & Bias Report</TranslateText>
