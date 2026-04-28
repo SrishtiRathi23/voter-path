@@ -10,6 +10,7 @@ const navLinks = [
   { to: '/checklist', label: 'Checklist' },
   { to: '/deadlines', label: 'Deadlines' },
   { to: '/myths', label: 'Myth Buster' },
+  { to: '/transparency', label: 'Transparency' },
 ];
 
 const Navbar = () => {
