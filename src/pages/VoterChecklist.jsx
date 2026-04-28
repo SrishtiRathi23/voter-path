@@ -103,6 +103,33 @@ const VoterChecklist = () => {
           </div>
         </div>
 
+        {/* Personalized Roadmap Tool */}
+        <div className="card mb-8 bg-blue-50 border border-blue-100">
+          <h3 className="text-h3 text-navy font-semibold mb-2"><TranslateText>Personalize Your Roadmap</TranslateText></h3>
+          <div className="flex flex-col md:flex-row gap-4">
+            <select 
+              className="input-field bg-white" 
+              defaultValue=""
+              onChange={(e) => {
+                if (e.target.value === 'under18') {
+                  alert("As a 17-year-old, you can now apply in advance to get enrolled when you turn 18! Look for Form 6 on the ECI portal.");
+                }
+              }}
+            >
+              <option value="" disabled>Select your age group</option>
+              <option value="under18">Under 18 (Pre-Registration)</option>
+              <option value="18plus">18 Years or Older (Voter)</option>
+            </select>
+            <select className="input-field bg-white" defaultValue="">
+              <option value="" disabled>Select your state</option>
+              <option value="mh">Maharashtra</option>
+              <option value="dl">Delhi</option>
+              <option value="ka">Karnataka</option>
+              <option value="other">Other State</option>
+            </select>
+          </div>
+        </div>
+
         {/* Section 1: Before Election Day */}
         <section aria-labelledby="before-heading" className="mb-8">
           <h2 id="before-heading" className="text-h2 text-navy font-semibold mb-4 flex items-center gap-2">
